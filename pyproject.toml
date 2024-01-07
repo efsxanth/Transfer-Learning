@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transfer_learning"
+version = "0.0.1"
+description = "A transfer learning-based package for image retrieval."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy==1.26.2",
+    "requests==2.30.0",
+    "keras==2.15.0",
+    "tensorflow==2.15.0",
+	"Pillow==10.1.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
